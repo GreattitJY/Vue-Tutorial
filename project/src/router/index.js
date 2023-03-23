@@ -57,6 +57,14 @@ const routes = [
       import(
         /* webpackChunkName: "databinding", webpackpreFetch: true */ '../views/1_databinding/DataBindingCheckboxView.vue'
       )
+  },
+  {
+    path: '/databinding/attr',
+    name: 'DataBindingAttributeView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackpreFetch: true */ '../views/1_databinding/DataBindingAttributeView.vue'
+      )
   }
 ]
 
