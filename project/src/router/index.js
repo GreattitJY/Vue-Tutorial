@@ -89,6 +89,30 @@ const routes = [
       import(
         /* webpackChunkName: "databinding", webpackpreFetch: true */ '../views/1_databinding/DataBindingStyleView.vue'
       )
+  },
+  {
+    path: '/event/click',
+    name: 'EventClickView',
+    component: () =>
+      import(
+        /* webpackChunkName: "event", webpackpreFetch: true */ '../views/2_event/EventClickView.vue'
+      )
+  },
+  {
+    path: '/event/change',
+    name: 'EventChangeView',
+    component: () =>
+      import(
+        /* webpackChunkName: "event", webpackpreFetch: true */ '../views/2_event/EventChangeView.vue'
+      )
+  },
+  {
+    path: '/event/key',
+    name: 'EventKeyView',
+    component: () =>
+      import(
+        /* webpackChunkName: "event", webpackpreFetch: true */ '../views/2_event/EventKeyView.vue'
+      )
   }
 ]
 
